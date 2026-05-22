@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Create a simple webpage with a button that, when clicked, displays an alert saying "Button clicked!" using JavaScript event listeners. </p>
+    
+    <script>
+
+    
+        var button = document.createElement("button");
+        button.innerHTML = "Click Me";
+
+        
+        document.body.appendChild(button);
+
+        
+        button.addEventListener("click", function() {
+            alert("Button clicked!");
+        });
+    </script>
+</body>
+</html>

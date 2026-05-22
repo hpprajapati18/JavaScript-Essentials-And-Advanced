@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Create a digital clock that updates every second using setInterval(). </p>
+    <script>
+        
+        function updateClock() {
+            const now = new Date();
+            console.log(now);
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            const timeString = `${hours}:${minutes}:${seconds}`;
+            console.log(timeString);
+        }
+
+        // setInterval(updateClock, 1000);
+         setTimeout(function()
+          {
+            const now = new Date();
+            console.log(now);
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            const timeString = `${hours}:${minutes}:${seconds}`;
+            console.log(timeString);
+        }
+, 1000);
+    </script>
+</body>
+</html>
