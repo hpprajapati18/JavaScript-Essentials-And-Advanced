@@ -1,0 +1,91 @@
+:root {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --text: white;
+  --btn: #3b82f6;
+}
+
+body.light {
+  --bg: #f1f5f9;
+  --card: #ffffff;
+  --text: #0f172a;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.app {
+  width: 100%;
+  max-width: 400px;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  background: var(--btn);
+  border: none;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+form {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+#error {
+  color: red;
+  font-size: 14px;
+}
+
+.link-card {
+  background: var(--card);
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link-card a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.remove {
+  background: red;
+  padding: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* 📱 Mobile-first already handled */
+/* 💻 Tablet/Desktop */
+@media (min-width: 600px) {
+  .app {
+    max-width: 500px;
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BioStack Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+
+    <!-- Theme Toggle -->
+    <div class="top-bar">
+      <h2>🌐 BioStack</h2>
+      <button id="themeToggle">🌙</button>
+    </div>
+
+    <!-- Form -->
+    <form id="linkForm">
+      <input type="text" id="title" placeholder="Title (e.g. GitHub)">
+      <input type="text" id="url" placeholder="https://example.com">
+      <button type="submit">Add Link</button>
+      <p id="error"></p>
+    </form>
+
+    <!-- Preview -->
+    <div id="preview"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
